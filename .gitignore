@@ -1,7 +1,58 @@
+# Python bytecode and cache
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Jupyter artifacts
 .ipynb_checkpoints/
+*.ipynb_checkpoint
+
+# Datasets (download separately, do not commit to repository)
 data.csv
 optdigits.tra
 optdigits.tes
+
+# Generated plot directories
 nb_plots/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Distribution and packaging
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Temporary and scratch files
+*.tmp
+*.bak
+generate_screenshots.py
