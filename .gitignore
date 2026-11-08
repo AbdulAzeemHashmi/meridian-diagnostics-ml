@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data.csv
+optdigits.tra
+optdigits.tes
+nb_plots/
