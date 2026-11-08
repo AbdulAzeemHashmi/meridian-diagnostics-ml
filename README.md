@@ -3,19 +3,19 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/NumPy-only-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
-  <img src="https://img.shields.io/badge/pandas-data%20loading-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas">
-  <img src="https://img.shields.io/badge/Matplotlib-plots-11557C?style=for-the-badge" alt="Matplotlib">
-  <img src="https://img.shields.io/badge/Jupyter-notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
+  <img src="assets/badges/python.svg" alt="Python">
+  <img src="assets/badges/numpy.svg" alt="NumPy">
+  <img src="assets/badges/pandas.svg" alt="pandas">
+  <img src="assets/badges/matplotlib.svg" alt="Matplotlib">
+  <img src="assets/badges/jupyter.svg" alt="Jupyter">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/scikit--learn-not%20used-red?style=flat-square" alt="No scikit-learn">
-  <img src="https://img.shields.io/badge/scipy-not%20used-red?style=flat-square" alt="No scipy">
-  <img src="https://img.shields.io/badge/roll%20number-24i--2013-blue?style=flat-square" alt="Roll number">
-  <img src="https://img.shields.io/badge/section-BAI--5A-green?style=flat-square" alt="Section">
-  <img src="https://img.shields.io/badge/seed-2013-orange?style=flat-square" alt="Seed">
+  <img src="assets/badges/no_sklearn.svg" alt="No scikit-learn">
+  <img src="assets/badges/no_scipy.svg" alt="No scipy">
+  <img src="assets/badges/roll.svg" alt="Roll number">
+  <img src="assets/badges/section.svg" alt="Section">
+  <img src="assets/badges/seed.svg" alt="Seed">
 </p>
 
 # Meridian Diagnostics ML
@@ -94,13 +94,13 @@ These small animations show the two ideas behind the playground. They are plain 
 
 | Part | Topic |
 |---|---|
-| ![Setup](https://img.shields.io/badge/Setup-5%20marks-lightgrey?style=flat-square) | Stratified split, standardisation, EDA, PCA by SVD, 8 asserts |
-| ![A](https://img.shields.io/badge/Part%20A-Perceptron-blue?style=flat-square) | Perceptron, Novikoff bound, averaged and kernel perceptron, multiclass |
-| ![B](https://img.shields.io/badge/Part%20B-Logistic-green?style=flat-square) | Stable loss, gradient check, four optimisers, L1 and L2, cost decisions, softmax |
-| ![C](https://img.shields.io/badge/Part%20C-SVM-orange?style=flat-square) | Pegasos, SMO with KKT and duality gap, kernels, grid search, multiclass SVM |
-| ![D](https://img.shields.io/badge/Part%20D-Clustering-purple?style=flat-square) | K-means, GMM with EM, hierarchical, DBSCAN, spectral, metrics |
-| ![E](https://img.shields.io/badge/Part%20E-Compare-yellow?style=flat-square) | Comparison tables and clinical recommendation |
-| ![F](https://img.shields.io/badge/Part%20F-Playground-red?style=flat-square) | Interactive playground with dragging and live numbers |
+| ![Setup](assets/badges/part_setup.svg) | Stratified split, standardisation, EDA, PCA by SVD, 8 asserts |
+| ![A](assets/badges/part_a.svg) | Perceptron, Novikoff bound, averaged and kernel perceptron, multiclass |
+| ![B](assets/badges/part_b.svg) | Stable loss, gradient check, four optimisers, L1 and L2, cost decisions, softmax |
+| ![C](assets/badges/part_c.svg) | Pegasos, SMO with KKT and duality gap, kernels, grid search, multiclass SVM |
+| ![D](assets/badges/part_d.svg) | K-means, GMM with EM, hierarchical, DBSCAN, spectral, metrics |
+| ![E](assets/badges/part_e.svg) | Comparison tables and clinical recommendation |
+| ![F](assets/badges/part_f.svg) | Interactive playground with dragging and live numbers |
 
 ---
 
@@ -226,6 +226,7 @@ meridian-diagnostics-ml/
 |   |-- pipeline.svg
 |   |-- perceptron_demo.svg
 |   |-- kmeans_demo.svg
+|   |-- badges/                     # Local SVG badges (no internet needed)
 |
 |-- screenshots/                        # Required Part F screenshots (7 PNG files)
 |   |-- perceptron.png
@@ -282,7 +283,7 @@ A helper that draws the 7 screenshots without a display (Agg backend). It writes
 
 ### `assets/`
 
-Four small animated SVG files. They are only used to make this README look good and are not needed to run the project.
+Four small animated SVG files and a `badges/` folder with 17 local SVG badges. They are only used to make this README look good and are not needed to run the project. The badges are stored in the repo on purpose, so they never show as broken images.
 
 ### `screenshots/`
 
