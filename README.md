@@ -1,50 +1,45 @@
 # Meridian Diagnostics ML
 
-**Machine Learning Assignment 3**
-Perceptron, Logistic Regression, Support Vector Machines and Clustering From Scratch
+Perceptron, Logistic Regression, Support Vector Machines and Clustering implemented from scratch in Python.
 
 | Field | Value |
 |---|---|
-| Student | Abdul Azeem |
-| Roll Number | 24i2013 |
-| Section | BAI5A |
+| Author | Abdul Azeem |
 | Repository | [AbdulAzeemHashmi/meridian-diagnostics-ml](https://github.com/AbdulAzeemHashmi/meridian-diagnostics-ml) |
 
 ---
 
-## Assignment Overview
+## Project Overview
 
-Meridian Diagnostics is a pathology lab that screens breast mass samples as benign or malignant and reads handwritten digits from sample ID forms. This assignment builds standard linear classifiers and clustering methods entirely from scratch using only NumPy, pandas, and Matplotlib. No scikit-learn, scipy, or any ready-made classifier is used anywhere.
-
-**Total marks:** 125
+Meridian Diagnostics is a pathology lab that screens breast mass samples as benign or malignant and reads handwritten digits from sample ID forms. This project builds standard linear classifiers and clustering methods entirely from scratch using only NumPy, pandas, and Matplotlib. No scikit-learn, scipy, or any ready-made classifier is used anywhere.
 
 **Parts covered:**
 
-| Part | Topic | Marks |
-|---|---|---|
-| Setup | Stratified split, standardisation, EDA, PCA by SVD, 8 asserts | 5 |
-| A | Perceptron, Novikoff bound, averaged and kernel perceptron, multiclass | 20 |
-| B | Stable loss, gradient check, four optimisers, L1/L2, cost decisions, softmax | 25 |
-| C | Pegasos, SMO with KKT and duality gap, kernels, grid search, multiclass SVM | 25 |
-| D | K-means, GMM with EM, hierarchical, DBSCAN, spectral, metrics | 20 |
-| E | Comparison tables and clinical recommendation | 10 |
-| F | Interactive playground with dragging and live stats | 10 |
+| Part | Topic |
+|---|---|
+| Setup | Stratified split, standardisation, EDA, PCA by SVD, 8 asserts |
+| A | Perceptron, Novikoff bound, averaged and kernel perceptron, multiclass |
+| B | Stable loss, gradient check, four optimisers, L1/L2, cost decisions, softmax |
+| C | Pegasos, SMO with KKT and duality gap, kernels, grid search, multiclass SVM |
+| D | K-means, GMM with EM, hierarchical, DBSCAN, spectral, metrics |
+| E | Comparison tables and clinical recommendation |
+| F | Interactive playground with dragging and live stats |
 
 ---
 
-## Roll Number Parameters
+## Model Parameters
 
-Roll: **2013** (digits d1=2, d2=0, d3=1, d4=3)
+Seed: **2013**
 
-| Parameter | Formula | Value |
-|---|---|---|
-| seed | 2013 | 2013 |
-| eta | 0.005 x (1 + d4) | 0.02 |
-| lam | 0.002 x max(1, d1+d2+d3+d4) | 0.012 |
-| C | 2 ^ ((d3+d4) mod 5 - 2) | 4.0 |
-| gamma | 0.02 x (1 + (roll mod 7)) | 0.10 |
-| r | 2 + (roll mod 4) | 3 |
-| rho | 0.02 x max(1, roll mod 6) | 0.02 |
+| Parameter | Value |
+|---|---|
+| seed | 2013 |
+| eta | 0.02 |
+| lam | 0.012 |
+| C | 4.0 |
+| gamma | 0.10 |
+| r | 3 |
+| rho | 0.02 |
 
 ---
 
@@ -104,8 +99,7 @@ meridian-diagnostics-ml/
 |-- 24i-2013_AbdulAzeem_BAI-5A.ipynb    # Main executed notebook (all parts)
 |-- mlcode.py                            # Shared ML library imported by notebook and playground
 |-- playground.py                        # Interactive visual playground (Part F)
-|-- generate_screenshots.py             # Headless script to produce screenshots folder
-|
+|-- generate_screenshots.py             # Headless script to produce screenshots folder|
 |-- screenshots/                         # Required Part F screenshots (7 PNG files)
 |   |-- perceptron.png                   # Perceptron decision boundary demo
 |   |-- logistic.png                     # Logistic regression boundary demo
@@ -128,11 +122,11 @@ meridian-diagnostics-ml/
 
 ### `24i-2013_AbdulAzeem_BAI-5A.ipynb`
 
-The main Jupyter notebook. It is fully self-contained and must run top-to-bottom without errors. It imports from `mlcode.py` for all algorithm implementations. Structure:
+The main Jupyter notebook. It is fully self-contained and runs top-to-bottom without errors. It imports from `mlcode.py` for all algorithm implementations. Structure:
 
 | Section | Content |
 |---|---|
-| Cell 1 | Roll number parameters printed and asserted |
+| Cell 1 | Model parameters printed |
 | Setup | Data loading, stratified split, standardisation, EDA, PCA, 8 asserts |
 | Part A | Perceptron, Novikoff bound, averaged perceptron, kernel perceptron, multiclass |
 | Part B | Stable sigmoid, gradient check, four optimisers, L1/L2 paths, cost threshold, softmax |
@@ -144,7 +138,7 @@ The main Jupyter notebook. It is fully self-contained and must run top-to-bottom
 
 ### `mlcode.py`
 
-Pure NumPy/Matplotlib implementation of all required functions. No scikit-learn or scipy. Every function has a docstring. Groups of functions:
+Pure NumPy/Matplotlib implementation of all functions. No scikit-learn or scipy. Every function has a docstring. Groups of functions:
 
 **Part A functions:**
 `perceptron_train`, `perceptron_predict`, `novikoff_bound`, `averaged_perceptron`, `kernel_perceptron`, `multiclass_perceptron`, `accuracy`, `confusion_matrix`, `precision_recall_f1`, `macro_f1`
@@ -187,11 +181,11 @@ Interactive point-and-click ML visualiser. Uses only NumPy and Matplotlib (event
 
 ### `generate_screenshots.py`
 
-Headless (Agg backend) script that programmatically creates all 7 required screenshots. Run once to populate the `screenshots/` folder. This file is listed in `.gitignore` and is a utility helper only.
+Headless (Agg backend) script that programmatically creates all 7 screenshots. Run once to populate the `screenshots/` folder. This file is listed in `.gitignore` and is a utility helper only.
 
 ### `screenshots/`
 
-Seven PNG files required by the assignment submission. All are committed to the repository.
+Seven PNG files for the interactive playground experiments. All are committed to the repository.
 
 | File | Content |
 |---|---|
@@ -366,7 +360,7 @@ python -c "import cProfile, mlcode as ml, numpy as np; rng = np.random.default_r
 
 ---
 
-## Library Restrictions (Assignment Rules)
+## Library Constraints
 
 **Allowed:**
 - `numpy` (including `numpy.linalg`) for all model computation
@@ -374,13 +368,13 @@ python -c "import cProfile, mlcode as ml, numpy as np; rng = np.random.default_r
 - `matplotlib` and `seaborn` for plots
 - Python standard library: `math`, `time`, `collections`, `itertools`
 
-**Not allowed:**
+**Not used (implemented from scratch instead):**
 - `scikit-learn`
 - `scipy`
 - `statsmodels`
 - Any ready-made classifier, optimiser, QP solver, clustering function, kernel, metric, cross-validation, or PCA function
 
-PCA must use `numpy.linalg.svd`. Eigen problems must use `numpy.linalg.eigh`. Distance and kernel matrices must be vectorised with NumPy.
+PCA uses `numpy.linalg.svd`. Eigen problems use `numpy.linalg.eigh`. Distance and kernel matrices are vectorised with NumPy.
 
 ---
 
@@ -404,3 +398,4 @@ meridian-diagnostics-ml/
 ```
 
 Datasets (`data.csv`, `optdigits.tra`, `optdigits.tes`) and Python cache (`__pycache__/`, `.ipynb_checkpoints/`) are excluded from the repository via `.gitignore`.
+
