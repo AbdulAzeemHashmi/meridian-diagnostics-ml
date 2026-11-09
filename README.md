@@ -217,7 +217,6 @@ meridian-diagnostics-ml/
 |-- 24i-2013_AbdulAzeem_BAI-5A.ipynb    # Main notebook (all parts and the report)
 |-- mlcode.py                           # Shared ML library used by the notebook and playground
 |-- playground.py                       # Interactive playground (Part F)
-|-- generate_screenshots.py             # Headless script that makes the screenshots
 |-- README.md                           # This file
 |-- .gitignore                          # Git ignore rules
 |
