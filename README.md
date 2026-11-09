@@ -236,7 +236,7 @@ meridian-diagnostics-ml/
 |   |-- exp2.png
 |   |-- exp3.png
 |
-|-- data.csv                            # D1 data (gitignored, download separately)
+|-- data.csv                            # D1 data 
 |-- optdigits.tra                       # D2 training file (gitignored)
 |-- optdigits.tes                       # D2 test file (gitignored)
 ```
