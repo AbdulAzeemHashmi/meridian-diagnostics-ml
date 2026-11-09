@@ -169,7 +169,7 @@ Seed: **2013**. All random generators are made with `np.random.default_rng(2013 
 
 **Direct file:** `https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data`
 
-**Local file:** `data.csv` (not in the repository, download it separately)
+**Local file:** `data.csv`
 
 | Property | Value |
 |---|---|
