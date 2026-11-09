@@ -412,12 +412,6 @@ jupyter nbconvert --to pdf 24i-2013_AbdulAzeem_BAI-5A.ipynb
 jupyter nbconvert --to html 24i-2013_AbdulAzeem_BAI-5A.ipynb
 ```
 
-To make the screenshots without a display:
-
-```bash
-python generate_screenshots.py
-```
-
 ---
 
 ## Debugging and Development
