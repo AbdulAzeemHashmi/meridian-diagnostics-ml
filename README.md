@@ -276,10 +276,6 @@ NumPy only. Every function has a docstring.
 
 A point and click visualiser built with NumPy and Matplotlib events. It imports from `mlcode.py`. Run it from a terminal, not inside Jupyter.
 
-### `generate_screenshots.py`
-
-A helper that draws the 7 screenshots without a display (Agg backend). It writes the PNG files into `screenshots/`.
-
 ### `assets/`
 
 Four small animated SVG files and a `badges/` folder with 17 local SVG badges. They are only used to make this README look good and are not needed to run the project. The badges are stored in the repo on purpose, so they never show as broken images.
